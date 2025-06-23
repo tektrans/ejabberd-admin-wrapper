@@ -39,5 +39,15 @@
     "mysql-client-w-metrics": "^0.1.5",
     "simple-git": "^3.28.0",
     "uniqid": "^5.4.0"
+  },
+  "nodemonConfig": {
+    "ext": "mjs,js,coffee,json,env",
+    "watch": [
+      ".env",
+      "."
+    ],
+    "ignore": [
+      "/logs/**"
+    ]
   }
 }
