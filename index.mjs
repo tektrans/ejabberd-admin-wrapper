@@ -3,6 +3,7 @@ process.cwd(import.meta.dirname);
 
 import constants from './lib/constants.mjs';
 import logger from './lib/logger.mjs';
+import sdNotify from './lib/sd-notify.mjs';
 import initWebUI from './lib/webui/index.mjs';
 
 const MODULE_NAME = 'MAIN';
@@ -11,6 +12,7 @@ logger.info(`${MODULE_NAME} 6373B0B4: Initializing`, {
 });
 
 await initWebUI();
+await sdNotify();
 
 logger.info(`${MODULE_NAME} 55E28073: Initialized`, {
   localUrl: `http://localhost:${constants.webuiListenPort}`,

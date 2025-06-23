@@ -50,5 +50,8 @@
     "ignore": [
       "/logs/**"
     ]
+  },
+  "optionalDependencies": {
+    "sd-notify": "^2.8.0"
   }
 }
