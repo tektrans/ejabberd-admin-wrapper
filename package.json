@@ -1,6 +1,6 @@
 {
   "name": "ejabberd-admin-wrapper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wrapper for ejabberd API",
   "main": "index.mjs",
   "scripts": {
