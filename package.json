@@ -36,7 +36,6 @@
     "bcrypt": "^6.0.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "express-basic-auth": "^1.2.1",
     "mysql-client-w-metrics": "^0.1.5",
     "simple-git": "^3.28.0",
     "uniqid": "^5.4.0"
