@@ -13,7 +13,6 @@ logger.info(`${MODULE_NAME} 6373B0B4: Initializing`, {
 await initWebUI();
 
 logger.info(`${MODULE_NAME} 55E28073: Initialized`, {
-  version: constants.version,
   localUrl: `http://localhost:${constants.webuiListenPort}`,
   baseUrl: constants.webuiBaseUrl
 });
