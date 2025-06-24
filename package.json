@@ -9,7 +9,7 @@
     "schema-update": "db-migrate up",
     "dev": "LOG_LEVEL=debug nodemon index.mjs",
     "start": "npm run schema-update && NODE_ENV=production node index.mjs",
-    "build-container": "podman build -t adhisimon/ejabberd-admin-wrapper .",
+    "build-container": "podman build -t ghcr.io/tektrans/ejabberd-admin-wrapper .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
