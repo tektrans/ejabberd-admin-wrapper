@@ -16,3 +16,7 @@ COPY --chown=node:node . .
 EXPOSE 11280
 
 CMD [ "npm", "start" ]
+
+LABEL org.opencontainers.image.url="https://github.com/tektrans/ejabberd-admin-wrapper"
+LABEL org.opencontainers.image.source="https://github.com/tektrans/ejabberd-admin-wrapper"
+LABEL org.opencontainers.image.documentation="https://github.com/tektrans/ejabberd-admin-wrapper"
