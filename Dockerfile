@@ -20,3 +20,5 @@ CMD [ "npm", "start" ]
 LABEL org.opencontainers.image.url="https://github.com/tektrans/ejabberd-admin-wrapper"
 LABEL org.opencontainers.image.source="https://github.com/tektrans/ejabberd-admin-wrapper"
 LABEL org.opencontainers.image.documentation="https://github.com/tektrans/ejabberd-admin-wrapper"
+LABEL org.opencontainers.image.title="ejabberd-admin-wrapper"
+LABEL org.opencontainers.image.description="Wrapper for ejabberd API"
