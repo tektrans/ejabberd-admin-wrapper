@@ -6,7 +6,10 @@
   "scripts": {
     "postversion": "git push && git push --tags",
     "version": "auto-changelog -p && git add CHANGELOG.md",
+    "schema-update": "db-migrate up",
     "dev": "LOG_LEVEL=debug nodemon index.mjs",
+    "start": "npm run schema-update && NODE_ENV=production node index.mjs",
+    "build-container": "podman build -t adhisimon/ejabberd-admin-wrapper .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
