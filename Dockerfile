@@ -15,6 +15,8 @@ COPY --chown=node:node . .
 
 EXPOSE 11280
 
+ENV LOG_LEVEL=verbose
+
 CMD [ "npm", "start" ]
 
 LABEL org.opencontainers.image.source https://github.com/tektrans/ejabberd-admin-wrapper
