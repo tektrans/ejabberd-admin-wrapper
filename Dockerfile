@@ -8,7 +8,7 @@ WORKDIR /home/node/app
 COPY package*.json ./
 USER node
 
-# ENV NODE_ENV=production
+ENV NODE_ENV=production
 
 RUN npm ci
 COPY --chown=node:node . .
