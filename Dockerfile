@@ -15,7 +15,7 @@ COPY --chown=node:node . .
 
 EXPOSE 11280
 
-ENV LOG_LEVEL=verbose
+ENV RUN_AS_CONTAINER=YES
 
 CMD [ "npm", "start" ]
 
