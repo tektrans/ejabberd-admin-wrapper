@@ -4,12 +4,13 @@
   "description": "Wrapper for ejabberd API",
   "main": "index.mjs",
   "scripts": {
+    "dump-version": "git describe | sed --expression 's/^v//' > version.txt",
     "postversion": "git push && git push --tags",
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "schema-update": "db-migrate up",
     "dev": "LOG_LEVEL=debug nodemon index.mjs",
     "start": "npm run schema-update && NODE_ENV=production node index.mjs",
-    "build-container": "podman build --build-arg APP_VERSION=`git describe` -t ghcr.io/tektrans/ejabberd-admin-wrapper:latest .",
+    "build-container": "npm run dump-version ; podman build --build-arg APP_VERSION=`cat version.txt` -t ghcr.io/tektrans/ejabberd-admin-wrapper:latest .",
     "publish-container": "podman push ghcr.io/tektrans/ejabberd-admin-wrapper:latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
