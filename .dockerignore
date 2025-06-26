@@ -6,3 +6,4 @@ Dockerfile
 .env
 app.pid
 logs
+tmp
