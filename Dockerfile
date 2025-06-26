@@ -19,4 +19,4 @@ ENV RUN_AS_CONTAINER=YES
 
 CMD [ "npm", "start" ]
 
-LABEL org.opencontainers.image.source https://github.com/tektrans/ejabberd-admin-wrapper
+LABEL "org.opencontainers.image.source"="https://github.com/tektrans/ejabberd-admin-wrapper"
