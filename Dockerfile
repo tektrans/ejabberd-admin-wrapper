@@ -1,5 +1,7 @@
 FROM docker.io/node:24-alpine
 
+RUN apk update
+RUN apk upgrade
 RUN apk add git
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
