@@ -20,10 +20,14 @@ npm ci
 ```
 
 ## Yang dibutuhkan
-* [NodeJS](https://nodejs.org/), tested di v20 dan v24.
-* Database [MariaDB](https://mariadb.org/)
-  (harus MariaDB, jangan gunakan MySQL karena perintah-perintah pada pembuatan schema database menggunakan perintah spesifik MariaDB).
-* Server [ejabberd](https://www.ejabberd.im/index.html) yang berjalan.
+* [NodeJS](https://nodejs.org/):
+  * v18: tested
+  * v20: tested
+  * v24: tested
+* Database [MariaDB](https://mariadb.org/).
+  Tested di MariaDB 10.11.x.
+  Harus MariaDB, jangan gunakan MySQL karena perintah-perintah pada pembuatan schema database menggunakan perintah spesifik MariaDB.
+* Server [ejabberd](https://www.ejabberd.im/index.html) yang berjalan. Tested di ejabberd v25.4.
 
 ## Konfigurasi
 Buat file ".env" yang berisi variabel-variabel environment yang sesuai. Contoh:
