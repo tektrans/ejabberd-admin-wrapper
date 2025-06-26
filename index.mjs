@@ -1,5 +1,6 @@
 /* eslint-disable import/first */
 process.cwd(import.meta.dirname);
+process.title = 'ejabberd-admin-wrapper';
 
 import { writeFile } from 'node:fs/promises';
 import constants from './lib/constants.mjs';
