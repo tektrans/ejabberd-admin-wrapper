@@ -28,6 +28,12 @@ ENV RUN_AS_CONTAINER=YES
 
 CMD [ "npm", "start" ]
 
-LABEL app.version="${APP_VERSION}"
-LABEL org.opencontainers.image.source="https://github.com/tektrans/ejabberd-admin-wrapper"
-LABEL org.opencontainers.image.authors="adhisimon@tektrans.id"
+LABEL \
+  org.opencontainers.image.title="ejabberd-admin-wrapper" \
+  org.opencontainers.image.description="Wrapper for ejabberd admin API" \
+  org.opencontainers.image.url="https://github.com/tektrans/ejabberd-admin-wrapper" \
+  org.opencontainers.image.source="https://github.com/tektrans/ejabberd-admin-wrapper" \
+  org.opencontainers.image.authors="adhisimon@tektrans.id" \
+  org.opencontainers.image.vendor="TEKTRANS" \
+  org.opencontainers.image.licenses="MIT" \
+  org.opencontainers.image.version="${APP_VERSION}" 
