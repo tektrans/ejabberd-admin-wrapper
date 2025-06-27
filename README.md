@@ -137,7 +137,7 @@ WantedBy=default.target
 
 ## Method yang tersedia
 
-** TODO **
+**TODO**
 
 ## Lisensi
 Hak cipta dipegang oleh [PT TEKNOLOGI TRANSAKSI DIGITAL (TEKTRANS)](https://tektrans.id).
